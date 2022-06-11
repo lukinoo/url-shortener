@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8V1s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9V1s.ttf) format('truetype');
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +19,13 @@
 }
 body {
   background: #fff;
+  font-family: "Poppins", sans-serif;
 }
-div {
-  font-size: 2rem;
-  font-family: sans-serif;
-}
-div span {
-  color: orangered;
+header {
+  min-height: 15vh;
+  color: #f1f1f1;
+  background: #191921;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

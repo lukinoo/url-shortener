@@ -1,17 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background: #fff;
+// mixins
+.display-flex (@x, @y) {
+  display: flex;
+  justify-content: @x;
+  align-items: @y;
 }
 
-div {
-  font-size: 2rem;
-  font-family: sans-serif;
-  span {
-    color: orangered;
-  }
+body {
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  min-height: 15vh;
+  color: #f1f1f1;
+  background: #191921;
+  .display-flex(center, center);
 }
