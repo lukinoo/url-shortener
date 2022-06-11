@@ -64,3 +64,47 @@ form {
     border-left: none;
   }
 }
+
+section {
+  min-height: calc(100vh - (2 * @minHeight15));
+  width: 95%;
+  margin: 0 auto;
+  .url-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid @lightGray;
+    padding: 0.5rem;
+  }
+  .short-url-items {
+    height: 50px;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid @lightGray;
+  }
+}
+
+.error_container {
+  min-height: calc(100vh - (2 * @minHeight15));
+  width: 95%;
+  margin: 0 auto;
+  .display-flex(center, center);
+  flex-direction: column;
+  h2 {
+    font-size: 1.5rem;
+  }
+  a {
+    text-decoration: none;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    .url-shorten-input-and-button ();
+    color: @lightWhite;
+    background: @purple;
+    border: 1px solid @purple;
+    font-weight: 400;
+    cursor: pointer;
+    border-left: none;
+  }
+}

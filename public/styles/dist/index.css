@@ -67,3 +67,49 @@ form .url_shortener_button {
   cursor: pointer;
   border-left: none;
 }
+section {
+  min-height: calc(100vh - (2 * 15vh));
+  width: 95%;
+  margin: 0 auto;
+}
+section .url-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem;
+}
+section .short-url-items {
+  height: 50px;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+.error_container {
+  min-height: calc(100vh - (2 * 15vh));
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.error_container h2 {
+  font-size: 1.5rem;
+}
+.error_container a {
+  text-decoration: none;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  color: #fff;
+  background: #665dc3;
+  border: 1px solid #665dc3;
+  font-weight: 400;
+  cursor: pointer;
+  border-left: none;
+}

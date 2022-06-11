@@ -1,0 +1,12 @@
+<section>
+  <div class="url-info">
+    <p>Full URL</p>
+    <p>shorten URL</p>
+  </div>
+  {% for url in shortUrls %}
+  <div class="short-url-items">
+    <a href="{{ url.short }}">{{ url.full }}</a>
+    <a href="{{ url.short }}">{{ url.short }}</a>
+  </div>
+  {% endfor %}
+</section>
