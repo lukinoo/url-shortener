@@ -1,10 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+// variables
+@darkBlue: #191921;
+@darkBlack: #111;
+@lightWhite: #fff;
+@lightGray: #ddd;
+@minHeight15: 15vh;
+@purple: #665dc3;
 
 // mixins
 .display-flex (@x, @y) {
@@ -13,14 +21,46 @@
   align-items: @y;
 }
 
+.url-shorten-input-and-button () {
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+}
+
 body {
-  background: #fff;
+  background: @lightWhite;
   font-family: "Poppins", sans-serif;
 }
 
 header {
-  min-height: 15vh;
+  min-height: @minHeight15;
   color: #f1f1f1;
-  background: #191921;
+  background: @darkBlue;
   .display-flex(center, center);
+  h1 {
+    font-weight: 400;
+    font-size: 1.7rem;
+  }
+}
+
+form {
+  min-height: @minHeight15;
+  .display-flex(center, center);
+  .url_shortener_input {
+    padding: 0.5rem 1rem;
+    color: @darkBlack;
+    background: @lightWhite;
+    .url-shorten-input-and-button ();
+    border: 1px solid @lightGray;
+  }
+  .url_shortener_button {
+    padding: 0.5rem;
+    .url-shorten-input-and-button ();
+    color: @lightWhite;
+    background: @purple;
+    border: 1px solid @purple;
+    font-weight: 400;
+    cursor: pointer;
+    border-left: none;
+  }
 }

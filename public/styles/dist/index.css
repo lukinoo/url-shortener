@@ -8,6 +8,13 @@
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
   font-weight: 500;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9V1s.ttf) format('truetype');
@@ -28,4 +35,35 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+header h1 {
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+form {
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form .url_shortener_input {
+  padding: 0.5rem 1rem;
+  color: #111;
+  background: #fff;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  border: 1px solid #ddd;
+}
+form .url_shortener_button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  color: #fff;
+  background: #665dc3;
+  border: 1px solid #665dc3;
+  font-weight: 400;
+  cursor: pointer;
+  border-left: none;
 }
