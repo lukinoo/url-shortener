@@ -1,0 +1,29 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukinoo/url-shortener.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukinoo/url-shortener/issues"
+  },
+  "homepage": "https://github.com/lukinoo/url-shortener#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "liquid-express-views": "^1.0.8",
+    "mongoose": "^6.3.6",
+    "nodemon": "^2.0.16",
+    "shortid": "^2.2.16"
+  }
+}
